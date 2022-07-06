@@ -1,0 +1,123 @@
+Spring: Spring Framework is the most popular application development framework of Java. 
+The main feature of the Spring Framework is dependency Injection or Inversion of Control (IoC). 
+With the help of Spring Framework, we can develop a loosely coupled application. It is better to use if application type or characteristics are purely defined.
+
+Spring Boot: Spring Boot is a module of Spring Framework. It allows us to build a stand-alone application with minimal or zero configurations. 
+It is better to use if we want to develop a simple Spring-based application or RESTful services.
+Spring Boot makes it easy to quickly bootstrap and start developing a Spring-based application. 
+It hides a lot of complexity behind the scene so that the developer can quickly get started and develop Spring-based applications easily.
+
+Spring MVC: Spring MVC is a Web MVC Framework for building web applications. 
+It contains a lot of configuration files for various capabilities. It is an HTTP oriented web application development framework.
+
+What is Spring boot?
+Sprint boot is a Java-based spring framework used for Rapid Application Development (to build stand-alone microservices). 
+It has extra support of auto-configuration and embedded application server like tomcat, etc.
+
+Features of Spring Boot that make it different?
+Creates stand-alone spring application with minimal configuration needed.
+It has embedded tomcat which makes it just code and run the application.
+Provide production-ready features such as metrics, health checks, and externalized configuration.
+Absolutely no requirement for XML configuration.
+
+
+List of annotations in Spring boot:
+
+1. @Bean - indicates that a method produces a bean to be managed by Spring.
+2. @Service - indicates that an annotated class is a service class.
+3. @Repository - indicates that an annotated class is a repository, which is an abstraction of data access and storage.
+4. @Configuration - indicates that a class is a configuration class that may contain bean definitions.
+5. @Controller - marks the class as web controller, capable of handling the requests.
+6. @RequestMapping - maps HTTP request with a path to a controller method.
+7. @Autowired - marks a constructor, field, or setter method to be autowired by Spring dependency injection.
+8. @SpringBootApplication - enables Spring Boot autoconfiguration and component scanning.
+9. @Entity annotation specifies that the class is an entity and is mapped to a database table.
+10. @Table annotation specifies the name of the database table to be used for mapping. 
+11. @Id annotation specifies the primary key of an entity and the @GeneratedValue provides for the specification 
+    of generation strategies for the values of primary keys.
+
+	@restcontroller and controller
+
+12. @Controller is a common annotation which is used to mark a class as Spring MVC Controller while the 
+13. @RestController is a special controller used in RESTFul web services 
+
+	Spring @Repository annotation is used to indicate that the class provides the mechanism for storage, retrieval, search, update and delete operation 
+on objects.
+
+
+What is dependency Injection?
+The process of injecting dependent bean objects into target bean objects is called dependency injection.
+* Setter Injection: The IOC container will inject the dependent bean object into the target bean object by calling the setter method.
+* Constructor Injection: The IOC container will inject the dependent bean object into the target bean 
+object by calling the target bean constructor.
+* Field Injection: The IOC container will inject the dependent bean object into the target bean object by Reflection API.
+
+IoC Inversion of Control-  Container is a framework for implementing automatic dependency injection. It manages object creation and its life-time and also 
+injects dependencies into the class.
+@Entity
+Entities in JPA are nothing but java object representing data that can be persisted to the database. 
+An entity represents a table stored in a database. Every instance of an entity represents a row in the table.
+
+What is the starter dependency of the Spring boot module?
+Spring boot provides numbers of starter dependency, here are the most commonly used -
+Data JPA starter.
+Test Starter.
+Security starter.
+Web starter.
+
+How does Spring Boot works?
+Spring Boot automatically configures your application based on the dependencies you have added to the project by using annotation. 
+The entry point of the spring boot application is the class that contains @SpringBootApplication annotation and the main method.
+
+What does the @SpringBootApplication annotation do internally?
+The @SpringBootApplication annotation is equivalent to using @Configuration, @EnableAutoConfiguration, and @ComponentScan with their default attributes. 
+Spring Boot enables the developer to use a single annotation instead of using multiple. 
+But, as we know, Spring provided loosely coupled features that we can use for each annotation as per our project needs.
+
+REST stands for REpresentational State Transfer.
+The main goal of RESTful web services is to make web services more effective. 
+RESTful web services try to define services using the different concepts that are already present in HTTP. 
+REST is an architectural approach, not a protocol.
+
+It does not define the standard message exchange format. 
+We can build REST services with both XML and JSON. JSON is more popular format with REST. The key abstraction is a resource in REST. 
+A resource can be anything. It can be accessed through a Uniform Resource Identifier (URI). 
+
+What is Spring Initializer?
+Spring Initializer is a web application that helps you to create an initial spring boot project structure and provides a maven or gradle file to build your code. 
+It solves the problem of setting up a framework when you are starting a project from scratch.
+
+The resource has representations like XML, HTML, and JSON. The current state capture by representational resource. 
+When we request a resource, we provide the representation of the resource. The important methods of HTTP are:
+
+GET: It reads a resource.
+PUT: It updates an existing resource.
+POST: It creates a new resource.
+DELETE: It deletes the resource.
+
+HTTP also defines the following standard status code:
+
+404: RESOURCE NOT FOUND
+200: SUCCESS
+201: CREATED
+401: UNAUTHORIZED
+500: SERVER ERROR
+
+Advantages of RESTful web services:
+RESTful web services are platform-independent.
+It can be written in any programming language and can be executed on any platform.
+It provides different data format like JSON, text, HTML, and XML.
+It is fast in comparison to SOAP because there is no strict specification like SOAP.
+These are reusable.
+They are language neutral.
+
+JPA Features
+There are following features of JPA:
+
+It is a powerful repository and custom object-mapping abstraction.
+It supports for cross-store persistence. It means an entity can be partially stored in MySQL and Neo4j (Graph Database Management System).
+It dynamically generates queries from queries methods name.
+The domain base classes provide basic properties.
+It supports transparent auditing.
+Possibility to integrate custom repository code.
+It is easy to integrate with Spring Framework with the custom namespace.
